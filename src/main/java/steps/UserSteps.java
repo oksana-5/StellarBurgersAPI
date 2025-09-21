@@ -5,13 +5,10 @@ import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import static data.Endpoints.*;
 import static io.restassured.RestAssured.given;
 
 public class UserSteps {
-
-    public static final String PATH_CREATE_USER = "/api/auth/register";
-    public static final String PATH_DELETE_USER = "/api/auth/user";
-    public static final String PATH_LOGIN_USER = "/api/auth/login";
 
     @Step("create user")
     public static Response createUser(UserBuilder userBuilder) {

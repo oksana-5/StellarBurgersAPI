@@ -5,11 +5,10 @@ import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import static data.Endpoints.PATH_CREATE_ORDER;
 import static io.restassured.RestAssured.given;
 
 public class OrderSteps {
-
-    public static final String PATH_CREATE_ORDER = "/api/orders";
 
     @Step("create order with authorization")
     public static Response createOrderWithAuthorization(OrderBuilder orderBuilder, String accessToken) {
