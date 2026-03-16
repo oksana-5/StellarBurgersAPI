@@ -1,4 +1,4 @@
-# Diplom_2
+# StellarBurgersAPI
 ## Автотесты для приложения космической бургерной Stellar Burgers.
 
 ### Автотесты для API
